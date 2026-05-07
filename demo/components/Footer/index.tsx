@@ -20,7 +20,7 @@ const FooterDemo: React.FC = () => (
         </div>
         <CodeBlock
             code={`import React from 'react';
-import { Footer } from 'animal-island-ui';
+import { Footer } from 'spark-park';
 
 const App = () => {
     return (

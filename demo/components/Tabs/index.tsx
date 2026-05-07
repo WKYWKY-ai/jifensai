@@ -58,7 +58,7 @@ const TabsDemo: React.FC = () => {
             </div>
             <div style={{ marginTop: 16, fontSize: 13, color: '#a08060' }}>当前选中: <span style={{ color: '#19c8b9', fontWeight: 600 }}>{items.find(i => i.key === activeKey)?.label}</span></div>
             <CodeBlock code={`import React, { useState } from 'react';
-import { Tabs } from 'animal-island-ui';
+import { Tabs } from 'spark-park';
 
 const App = () => {
     return (

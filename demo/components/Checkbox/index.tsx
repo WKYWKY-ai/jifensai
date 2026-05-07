@@ -92,7 +92,7 @@ const CheckboxDemo: React.FC = () => {
 
             <CodeBlock
                 code={`import React, { useState } from 'react';
-import { Checkbox } from 'animal-island-ui';
+import { Checkbox } from 'spark-park';
 
 const options = [
     { label: '🌊 海滩', value: 'beach' },

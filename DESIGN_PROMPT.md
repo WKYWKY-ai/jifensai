@@ -1,9 +1,9 @@
-# animal-island-ui 设计提示词
+# spark-park 设计提示词
 
 ## UI 工具提示词（适用于 v0 / Figma AI / Framer AI / Locofy）
 
 ```
-Design a UI in the style of "animal-island-ui" — an Animal Crossing-inspired React component library.
+Design a UI in the style of "spark-park" — an Animal Crossing-inspired React component library.
 Reproduce every detail below as precisely as possible.
 
 === FONTS (REQUIRED — load from Google Fonts if not installed) ===
@@ -240,7 +240,7 @@ Decorative:  Time, Phone, Footer, Divider, Cursor, Typewriter
 ## 图片生成提示词（适用于 Midjourney / DALL-E / Stable Diffusion）
 
 ```
-Pixel-perfect UI screenshot of "animal-island-ui" React component library website,
+Pixel-perfect UI screenshot of "spark-park" React component library website,
 Animal Crossing Nintendo Switch life-sim game aesthetic,
 
 Interface details:

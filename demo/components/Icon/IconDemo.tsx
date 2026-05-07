@@ -98,7 +98,7 @@ const IconDemo: React.FC = () => (
         </div>
         <CodeBlock
             code={`import React from 'react';
-import { Icon } from 'animal-island-ui';
+import { Icon } from 'spark-park';
 
 const App = () => {
     return (

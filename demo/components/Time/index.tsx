@@ -15,7 +15,7 @@ const TimeDemo: React.FC = () => (
         </div>
         <CodeBlock
             code={`import React from 'react';
-import { Time } from 'animal-island-ui';
+import { Time } from 'spark-park';
 
 const App = () => {
     return (

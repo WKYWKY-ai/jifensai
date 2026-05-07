@@ -24,7 +24,7 @@ const PhoneDemo: React.FC = () => (
         </div>
         <CodeBlock
             code={`import React from 'react';
-import { Phone } from 'animal-island-ui';
+import { Phone } from 'spark-park';
 
 const App = () => {
     return (

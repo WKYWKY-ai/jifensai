@@ -2,12 +2,20 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-    base: '/animal-island-ui/',
-    plugins: [react()],
+    base: '/',
+    plugins: [react(), viteStaticCopy({
+        targets: [
+            {
+                src: 'demo/html/favicon.svg',
+                dest: 'html',
+            },
+        ],
+    })],
     resolve: {
         alias: {
             '@': resolve(__dirname, 'src'),

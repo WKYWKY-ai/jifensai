@@ -2,17 +2,17 @@
 
 
 <div align="center">
-    <img src="img/readme-home.png" alt="animal-island-ui" style="border-radius: 12px; width: 40%; display: block; margin: 0 auto;" />    
+    <img src="img/readme-home.png" alt="spark-park" style="border-radius: 12px; width: 40%; display: block; margin: 0 auto;" />    
 </div>
 <div align="center">
     A React UI component library inspired by Animal Crossing: New Horizons
 </div>
 <br/>
 <div align="center">
-    <a href="https://github.com/guokaigdg/animal-island-ui/stargazers"><img src="https://img.shields.io/github/stars/guokaigdg/animal-island-ui?style=flat-square" alt="Stars"></a>
+    <a href="https://github.com/guokaigdg/spark-park/stargazers"><img src="https://img.shields.io/github/stars/guokaigdg/spark-park?style=flat-square" alt="Stars"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License"></a>
-    <a href="LICENSE"><img src="https://img.shields.io/npm/dm/animal-island-ui.svg?style=flat-square" alt=""></a>
-    <a href="https://github.com/guokaigdg/animal-island-ui/releases"><img src="https://img.shields.io/github/v/tag/guokaigdg/animal-island-ui?label=version&style=flat-square" alt="Version"></a>
+    <a href="LICENSE"><img src="https://img.shields.io/npm/dm/spark-park.svg?style=flat-square" alt=""></a>
+    <a href="https://github.com/guokaigdg/spark-park/releases"><img src="https://img.shields.io/github/v/tag/guokaigdg/spark-park?label=version&style=flat-square" alt="Version"></a>
 </div>
 
 <br/>
@@ -30,24 +30,24 @@ All visual elements, layouts, icons, and animations are independently designed a
 
 ## Preview
 
-- Online Preview (PC) [animal-island-ui-pc](https://guokaigdg.github.io/animal-island-ui/#/)
-- Online Preview (Mobile) [animal-island-ui-mobile](https://guokaigdg.github.io/animal-island-ui/#/)
+- Online Preview (PC) [spark-park-pc](https://guokaigdg.github.io/spark-park/#/)
+- Online Preview (Mobile) [spark-park-mobile](https://guokaigdg.github.io/spark-park/#/)
 
 ## Installation
 
 ```bash
-npm install animal-island-ui
+npm install spark-park
 ```
 
 
 
 ## Quick Start
 
-> ⚠️ **Important**: Please make sure to import the styles with `import 'animal-island-ui/style'`, otherwise the components will have no styles or fonts!
+> ⚠️ **Important**: Please make sure to import the styles with `import 'spark-park/style'`, otherwise the components will have no styles or fonts!
 
 ```tsx
-import { Button, Card } from 'animal-island-ui';
-import 'animal-island-ui/style';
+import { Button, Card } from 'spark-park';
+import 'spark-park/style';
 
 function App() {
     return (
@@ -77,8 +77,8 @@ Complete reference for different scenarios:
 
 ```bash
 # Clone the repository
-git clone https://github.com/guokaigdg/animal-island-ui.git
-cd animal-island-ui
+git clone https://github.com/guokaigdg/spark-park.git
+cd spark-park
 
 # Install dependencies
 npm install

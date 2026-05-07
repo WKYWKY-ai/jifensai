@@ -1,7 +1,7 @@
 {
-    "name": "animal-island-ui",
+    "name": "spark-park",
     "version": "0.7.5",
-    "description": "for learning purpose only, A nature-inspired React component library — Button, Input, Switch, Modal, Card, Collapse, Cursor, Divider",
+    "description": "只有种下的太阳越多，这个公园才会汇聚更多的光源 - A nature-inspired React component library",
     "type": "module",
     "main": "dist/cjs/index.cjs",
     "module": "dist/es/index.js",
@@ -26,11 +26,11 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/guokaigdg/animal-island-ui"
+        "url": "https://github.com/guokaigdg/spark-park"
     },
-    "homepage": "https://github.com/guokaigdg/animal-island-ui#readme",
+    "homepage": "https://github.com/guokaigdg/spark-park#readme",
     "bugs": {
-        "url": "https://github.com/guokaigdg/animal-island-ui/issues"
+        "url": "https://github.com/guokaigdg/spark-park/issues"
     },
     "author": "guokaigdg",
     "scripts": {
@@ -48,6 +48,7 @@
         "@fontsource/noto-sans-sc": "^5.2.9",
         "@fontsource/nunito": "^5.2.7",
         "@fontsource/zen-maru-gothic": "^5.2.8",
+        "@netlify/functions": "^5.2.0",
         "classnames": "^2.5.1"
     },
     "devDependencies": {
@@ -63,7 +64,8 @@
         "react-dom": "^18.3.1",
         "typescript": "^5.7.3",
         "vite": "^7.3.2",
-        "vite-plugin-dts": "^4.5.4"
+        "vite-plugin-dts": "^4.5.4",
+        "vite-plugin-static-copy": "^4.1.0"
     },
     "keywords": [
         "react",
@@ -71,7 +73,7 @@
         "ui",
         "typescript",
         "theme",
-        "animal-island-ui",
+        "spark-park",
         "nature"
     ],
     "license": "MIT"

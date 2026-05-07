@@ -17,6 +17,9 @@ import '@fontsource/zen-maru-gothic/japanese-500.css';
 import '@fontsource/zen-maru-gothic/japanese-700.css';
 import '@fontsource/zen-maru-gothic/japanese-900.css';
 import HomePage from './HomePage';
+import LeaderboardPage from './LeaderboardPage';
+import MessageBoardPage from './MessageBoardPage';
+import AdminPage from './AdminPage';
 import { PAGE_INFO } from './pageInfo';
 import { useIsMobile } from './tools';
 
@@ -110,8 +113,9 @@ const S = {
         overflow: 'hidden',
     } as React.CSSProperties,
     homeBg: {
-        background: `url(${new URL('./img/home_bg.webp', import.meta.url).href}) 0 0 / auto repeat, #7DC395`,
-        animation: 'bgScroll 80s linear infinite',
+        background: '#2b4d8f',
+        position: 'relative',
+        overflow: 'hidden',
     } as React.CSSProperties,
     sidebarHeader: {
         padding: '20px 16px 12px',
@@ -247,6 +251,9 @@ const App: React.FC = () => {
     const activeKey =
         hash.startsWith('/') && hash.length > 1 ? hash.slice(1) : 'home';
     const isHomePage = activeKey === 'home';
+    const isLeaderboardPage = activeKey === 'leaderboard';
+    const isMessageBoardPage = activeKey === 'messageboard';
+    const isAdminPage = activeKey === 'admin';
 
     // Close drawer when switching to desktop
     useEffect(() => {
@@ -270,9 +277,17 @@ const App: React.FC = () => {
     return (
         <Cursor>
             <style>{`
-                @keyframes bgScroll {
-                    0% { background-position: 100% 0%; }
-                    100% { background-position: 0% 100%; }
+                @keyframes float1 {
+                    0%, 100% { transform: translateY(0) rotate(0deg); }
+                    50% { transform: translateY(-15px) rotate(10deg); }
+                }
+                @keyframes float2 {
+                    0%, 100% { transform: translateY(0) rotate(0deg); }
+                    50% { transform: translateY(-20px) rotate(-15deg); }
+                }
+                @keyframes float3 {
+                    0%, 100% { transform: translateY(0) rotate(0deg); }
+                    50% { transform: translateY(-10px) rotate(20deg); }
                 }
             `}</style>
             {isHomePage ? (
@@ -286,6 +301,15 @@ const App: React.FC = () => {
                 >
                     <HomePage onNavigate={navigate} />
                 </div>
+            ) : isMessageBoardPage ? (
+                /* Message Board page — full screen */
+                <MessageBoardPage />
+            ) : isLeaderboardPage ? (
+                /* Leaderboard page — full screen */
+                <LeaderboardPage />
+            ) : isAdminPage ? (
+                /* Admin page — full screen */
+                <AdminPage />
             ) : (
                 /* Component page — with sidebar */
                 <div style={S.layout}>

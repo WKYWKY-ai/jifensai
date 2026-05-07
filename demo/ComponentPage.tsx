@@ -475,7 +475,7 @@ const InputDemo: React.FC = () => {
             </div>
             <CodeBlock
                 code={`import React, { useState } from 'react';
-import { Input } from 'animal-island-ui';
+import { Input } from 'spark-park';
 
 const App = () => {
     const [val, setVal] = useState('');
@@ -574,9 +574,7 @@ const CardDemo: React.FC = () => (
                 </Card>
                 <Card style={{ maxWidth: 560, width: '100%' }}>
                     <p>
-                        在Nintendo 3DS《Animal Island: New Leaf》和《Animal Island: Happy Home
-                        Designer》中製作的「我的設計」QR
-                        Code，以智慧型裝置讀取就能通過狸端機入口站下載至《集合啦！動物森友會》。
+                        种下太阳，汇聚光源。每一束光芒都是心的温度，照亮这片属于你的公园。
                     </p>
                 </Card>
             </div>
@@ -587,9 +585,7 @@ const CardDemo: React.FC = () => (
                 </Card>
                 <Card type="title" style={{ maxWidth: 360, width: '100%' }}>
                     <p>
-                        欢迎来到无人岛！在Nintendo 3DS《Animal Island: New Leaf》和《Animal Island: Happy Home
-                        Designer》中製作的「我的設計」QR
-                        Code，以智慧型裝置讀取就能通過狸端機入口站下載至《集合啦！動物森友會》。
+                        种下太阳，汇聚光源。每一束光芒都是心的温度，照亮这片属于你的公园。
                     </p>
                 </Card>
             </div>
@@ -599,7 +595,7 @@ const CardDemo: React.FC = () => (
                     <p>虚线边框卡片</p>
                 </Card>
                 <Card type="dashed" style={{ maxWidth: 360, width: '100%' }}>
-                    <p>欢迎来到无人岛！虚线边框适合用于轻量提示或次要信息展示。</p>
+                    <p>光芒虚线边框，适合用于轻量提示或次要信息展示。</p>
                 </Card>
             </div>
         </div>
@@ -693,7 +689,7 @@ const CardDemo: React.FC = () => (
 
         <CodeBlock
             code={`import React from 'react';
-import { Card } from 'animal-island-ui';
+import { Card } from 'spark-park';
 
 const App = () => {
     return (
@@ -881,7 +877,7 @@ const ModalDemo: React.FC = () => {
             </Modal>
             <CodeBlock
                 code={`import React, { useState } from 'react';
-import { Button, Modal } from 'animal-island-ui';
+import { Button, Modal } from 'spark-park';
 
 const App = () => {
     const [open, setOpen] = useState(false);
@@ -1044,7 +1040,7 @@ const DividerDemo: React.FC = () => (
         <Divider type="wave-yellow" />
         <CodeBlock
             code={`import React from 'react';
-import { Divider } from 'animal-island-ui';
+import { Divider } from 'spark-park';
 
 const App = () => {
     return (
@@ -1136,7 +1132,7 @@ const SelectDemo: React.FC = () => {
             </div>
             <CodeBlock
                 code={`import React, { useState } from 'react';
-import { Select } from 'animal-island-ui';
+import { Select } from 'spark-park';
 
 const options = [
     { key: 'option1', label: '选项一' },

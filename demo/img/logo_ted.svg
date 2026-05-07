@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80">
+  <text x="60" y="50" font-family="'Comic Sans MS', cursive" font-size="24" font-weight="bold" fill="#2b4d8f" text-anchor="middle">SPARK</text>
+  <text x="60" y="72" font-family="'Comic Sans MS', cursive" font-size="20" fill="#f5c518" text-anchor="middle">PARK</text>
+  <circle cx="20" cy="25" r="12" fill="#f5c518"/>
+  <g stroke="#f5c518" stroke-width="2" stroke-linecap="round">
+    <line x1="20" y1="8" x2="20" y2="15"/>
+    <line x1="20" y1="35" x2="20" y2="42"/>
+    <line x1="8" y1="25" x2="15" y2="25"/>
+    <line x1="25" y1="25" x2="32" y2="25"/>
+  </g>
+  <circle cx="100" cy="55" r="8" fill="#2b4d8f"/>
+  <g stroke="#2b4d8f" stroke-width="1.5" fill="none">
+    <circle cx="100" cy="55" r="5"/>
+    <circle cx="100" cy="55" r="6.5"/>
+    <path d="M100 50 L100 60 M95 55 L105 55"/>
+  </g>
+</svg>

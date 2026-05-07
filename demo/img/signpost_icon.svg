@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <path d="M38 35 L38 75" stroke="#666" stroke-width="6" stroke-linecap="round"/>
+  <path d="M38 30 L38 78" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="38" cy="28" rx="8" ry="5" fill="#888" stroke="#555" stroke-width="2"/>
+  <ellipse cx="38" cy="26" rx="6" ry="3" fill="#aaa" stroke="#666" stroke-width="1.5"/>
+  <rect x="12" y="12" width="56" height="14" rx="3" fill="#fafafa" stroke="#333" stroke-width="2"/>
+  <path d="M14 14 L14 22 L66 22 L66 14" stroke="#888" stroke-width="1" fill="none"/>
+  <text x="18" y="22" font-family="'Times New Roman', serif" font-size="7" font-weight="bold" fill="#222">TECHNOLOGY</text>
+  <rect x="35" y="8" width="10" height="8" rx="2" fill="#fafafa" stroke="#333" stroke-width="1.5"/>
+  <text x="36" y="14" font-family="'Times New Roman', serif" font-size="4" font-weight="bold" fill="#222">←600</text>
+  <rect x="6" y="42" width="68" height="16" rx="3" fill="#fafafa" stroke="#333" stroke-width="2"/>
+  <path d="M8 44 L8 54 L72 54 L72 44" stroke="#888" stroke-width="1" fill="none"/>
+  <text x="14" y="54" font-family="'Times New Roman', serif" font-size="7" font-weight="bold" fill="#222">LIBERAL ARTS</text>
+  <rect x="48" y="38" width="12" height="8" rx="2" fill="#fafafa" stroke="#333" stroke-width="1.5"/>
+  <text x="49" y="44" font-family="'Times New Roman', serif" font-size="4" font-weight="bold" fill="#222">←1500</text>
+  <ellipse cx="38" cy="58" rx="10" ry="6" fill="#888" stroke="#555" stroke-width="2"/>
+  <ellipse cx="38" cy="56" rx="7" ry="4" fill="#aaa" stroke="#666" stroke-width="1.5"/>
+  <path d="M30 78 Q25 82 20 78 Q22 76 24 78" stroke="#666" stroke-width="1.5" fill="none"/>
+  <path d="M40 78 Q45 83 50 78 Q48 76 46 78" stroke="#666" stroke-width="1.5" fill="none"/>
+  <path d="M50 78 Q55 82 60 78 Q58 76 56 78" stroke="#666" stroke-width="1.5" fill="none"/>
+</svg>
