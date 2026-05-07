@@ -672,6 +672,122 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             </div>
         </div>
 
+        {/* Activity Announcement */}
+        <div style={{
+            ...S.section,
+            padding: isMobile ? '32px 16px' : '48px 40px',
+            background: 'linear-gradient(135deg, #fff5e6 0%, #fff9f0 100%)',
+            borderBottom: '3px solid #ffd93d',
+        }}>
+            <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '12px',
+                marginBottom: '20px',
+                justifyContent: 'center',
+            }}>
+                <span style={{ fontSize: '24px' }}>📢</span>
+                <div style={{
+                    ...S.sectionTitle,
+                    fontSize: isMobile ? 20 : 24,
+                    color: '#c45c1e',
+                    margin: 0,
+                }}>
+                    活动公告
+                </div>
+            </div>
+            <div style={{
+                display: 'grid',
+                gridTemplateColumns: isMobile ? '1fr' : 'repeat(2, 1fr)',
+                gap: '16px',
+                maxWidth: 800,
+                margin: '0 auto',
+            }}>
+                <Card
+                    style={{
+                        padding: '20px',
+                        background: 'linear-gradient(135deg, #fff 0%, #fffaf0 100%)',
+                        border: '2px dashed #ffd93d',
+                        borderRadius: '16px',
+                    }}
+                >
+                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
+                        <div style={{
+                            width: '40px',
+                            height: '40px',
+                            borderRadius: '10px',
+                            background: 'linear-gradient(135deg, #ff6b6b, #ee5a24)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            fontSize: '20px',
+                            flexShrink: 0,
+                        }}>
+                            🌞
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <div style={{
+                                fontSize: '16px',
+                                fontWeight: 'bold',
+                                color: '#c45c1e',
+                                marginBottom: '4px',
+                            }}>
+                                阳光故事征集
+                            </div>
+                            <div style={{
+                                fontSize: '13px',
+                                color: '#666',
+                                lineHeight: 1.5,
+                            }}>
+                                分享你的成长故事，赢取双倍积分！活动截止：5月31日
+                            </div>
+                        </div>
+                    </div>
+                </Card>
+                <Card
+                    style={{
+                        padding: '20px',
+                        background: 'linear-gradient(135deg, #fff 0%, #f0f8ff 100%)',
+                        border: '2px dashed #64b5f6',
+                        borderRadius: '16px',
+                    }}
+                >
+                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
+                        <div style={{
+                            width: '40px',
+                            height: '40px',
+                            borderRadius: '10px',
+                            background: 'linear-gradient(135deg, #4fc3f7, #2196f3)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            fontSize: '20px',
+                            flexShrink: 0,
+                        }}>
+                            🎁
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <div style={{
+                                fontSize: '16px',
+                                fontWeight: 'bold',
+                                color: '#1976d2',
+                                marginBottom: '4px',
+                            }}>
+                                推荐有礼
+                            </div>
+                            <div style={{
+                                fontSize: '13px',
+                                color: '#666',
+                                lineHeight: 1.5,
+                            }}>
+                                邀请同事注册，双方各得10积分！
+                            </div>
+                        </div>
+                    </div>
+                </Card>
+            </div>
+        </div>
+
         {/* Light Up */}
         <div style={{ ...S.section, padding: isMobile ? '32px 16px' : '48px 40px' }}>
             <div style={S.sectionTitle}>点亮你</div>
