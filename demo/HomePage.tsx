@@ -672,29 +672,98 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             </div>
         </div>
 
-        {/* Activity Announcement */}
+        {/* Activity Announcement - Soccer Field Style */}
         <div style={{
             ...S.section,
             padding: isMobile ? '32px 16px' : '48px 40px',
-            background: 'linear-gradient(135deg, #fff5e6 0%, #fff9f0 100%)',
-            borderBottom: '3px solid #ffd93d',
+            background: 'linear-gradient(135deg, #1e6b32 0%, #2d8a4e 50%, #1e6b32 100%)',
+            position: 'relative',
+            overflow: 'hidden',
         }}>
+            {/* 草地纹理 */}
+            <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundImage: `
+                    repeating-linear-gradient(
+                        0deg,
+                        transparent,
+                        transparent 10px,
+                        rgba(255,255,255,0.03) 10px,
+                        rgba(255,255,255,0.03) 11px
+                    ),
+                    repeating-linear-gradient(
+                        90deg,
+                        transparent,
+                        transparent 10px,
+                        rgba(255,255,255,0.03) 10px,
+                        rgba(255,255,255,0.03) 11px
+                    )
+                `,
+                pointerEvents: 'none',
+            }}></div>
+            {/* 中圈线 */}
+            <div style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                width: '120px',
+                height: '120px',
+                border: '2px solid rgba(255,255,255,0.3)',
+                borderRadius: '50%',
+                pointerEvents: 'none',
+            }}></div>
+            {/* 浮动足球装饰 */}
+            <div style={{
+                position: 'absolute',
+                top: '20%',
+                right: '10%',
+                fontSize: '32px',
+                animation: 'floatSoccer 3s ease-in-out infinite',
+                opacity: 0.6,
+            }}>⚽</div>
+            <div style={{
+                position: 'absolute',
+                bottom: '20%',
+                left: '8%',
+                fontSize: '24px',
+                animation: 'floatSoccer 4s ease-in-out infinite 1s',
+                opacity: 0.5,
+            }}>⚽</div>
+            
+            <style>
+                {`
+                    @keyframes floatSoccer {
+                        0%, 100% { transform: translateY(0) rotate(0deg); }
+                        50% { transform: translateY(-10px) rotate(10deg); }
+                    }
+                `}
+            </style>
+            
             <div style={{
                 display: 'flex',
                 alignItems: 'center',
                 gap: '12px',
                 marginBottom: '20px',
                 justifyContent: 'center',
+                position: 'relative',
+                zIndex: 1,
             }}>
-                <span style={{ fontSize: '24px' }}>📢</span>
+                <span style={{ fontSize: '28px' }}>⚽</span>
                 <div style={{
                     ...S.sectionTitle,
-                    fontSize: isMobile ? 20 : 24,
-                    color: '#c45c1e',
+                    fontSize: isMobile ? 20 : 28,
+                    color: '#fff',
                     margin: 0,
+                    textShadow: '2px 2px 0 rgba(0,0,0,0.3)',
                 }}>
                     活动公告
                 </div>
+                <span style={{ fontSize: '28px' }}>⚽</span>
             </div>
             <div style={{
                 display: 'grid',
@@ -702,26 +771,31 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 gap: '16px',
                 maxWidth: 800,
                 margin: '0 auto',
+                position: 'relative',
+                zIndex: 1,
             }}>
                 <Card
                     style={{
                         padding: '20px',
-                        background: 'linear-gradient(135deg, #fff 0%, #fffaf0 100%)',
-                        border: '2px dashed #ffd93d',
+                        background: 'linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,250,240,0.95) 100%)',
+                        border: '3px solid #f5c518',
                         borderRadius: '16px',
+                        boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
                     }}
                 >
                     <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                         <div style={{
-                            width: '40px',
-                            height: '40px',
-                            borderRadius: '10px',
-                            background: 'linear-gradient(135deg, #ff6b6b, #ee5a24)',
+                            width: '44px',
+                            height: '44px',
+                            borderRadius: '50%',
+                            background: 'linear-gradient(135deg, #f5c518, #ffd93d)',
+                            border: '2px solid #c4a000',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            fontSize: '20px',
+                            fontSize: '22px',
                             flexShrink: 0,
+                            boxShadow: '0 2px 8px rgba(245,197,24,0.4)',
                         }}>
                             🌞
                         </div>
@@ -729,14 +803,14 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                             <div style={{
                                 fontSize: '16px',
                                 fontWeight: 'bold',
-                                color: '#c45c1e',
+                                color: '#2d8a4e',
                                 marginBottom: '4px',
                             }}>
                                 阳光故事征集
                             </div>
                             <div style={{
                                 fontSize: '13px',
-                                color: '#666',
+                                color: '#555',
                                 lineHeight: 1.5,
                             }}>
                                 分享你的成长故事，赢取双倍积分！活动截止：5月31日
@@ -747,22 +821,25 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <Card
                     style={{
                         padding: '20px',
-                        background: 'linear-gradient(135deg, #fff 0%, #f0f8ff 100%)',
-                        border: '2px dashed #64b5f6',
+                        background: 'linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(240,248,255,0.95) 100%)',
+                        border: '3px solid #2196f3',
                         borderRadius: '16px',
+                        boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
                     }}
                 >
                     <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                         <div style={{
-                            width: '40px',
-                            height: '40px',
-                            borderRadius: '10px',
+                            width: '44px',
+                            height: '44px',
+                            borderRadius: '50%',
                             background: 'linear-gradient(135deg, #4fc3f7, #2196f3)',
+                            border: '2px solid #1565c0',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            fontSize: '20px',
+                            fontSize: '22px',
                             flexShrink: 0,
+                            boxShadow: '0 2px 8px rgba(33,150,243,0.4)',
                         }}>
                             🎁
                         </div>
@@ -777,7 +854,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                             </div>
                             <div style={{
                                 fontSize: '13px',
-                                color: '#666',
+                                color: '#555',
                                 lineHeight: 1.5,
                             }}>
                                 邀请同事注册，双方各得10积分！
